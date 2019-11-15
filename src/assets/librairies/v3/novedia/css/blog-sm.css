@@ -1,0 +1,76 @@
+.display-nav{ display: none;}
+
+.bgColor-blog{ background-color: #DDD;}
+
+.blog h2{font-size: 3.0rem; font-weight: bold; color: #999;margin: 65px 0 45px; padding-left: 20px;}
+
+.headerBlog { height: 128px; padding-top: 20px; background: url("https://medias-rct.lapostetelecom.local/portail_mobile/img/blog/header-blog.png") no-repeat left center; margin: 0;	text-align:center;}
+
+.blog .tab { background-color: white; padding-top:3px; padding-bottom:3px;}
+
+.blog .tab a{ display:block; border-right: 1px solid #E3E3E3; font-size: 1.2rem; color: #666;height:30px; padding-top:10px;}
+.blog .tab .no-border{ border-right:none;}
+
+.menu .col-lg-3 { height: 45px; background-color: rgba(50, 50, 50, 1); font-size: 1.2rem; color: #FFF;}
+.blog .tabRS .follow_us{ padding-top:15px; font-size: 1.2rem;}
+.blog .tabRS .pictos{ padding:10px 5px 0px 5px;}
+.blog .tabRS .pictos img{ max-width: 48px; max-height: 26px;} 
+    
+/* ARTICLE PREVIEW */
+.blog .articleList {background-color: #FFF;}
+.blog h3{position: absolute; top: -327px; color: #FFF; font-size: 4.0rem;text-transform: uppercase; font-weight: bold; padding: 15px 15px 0px 15px;
+/* Background dégradé */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.blog .articleList .visuelArticle {overflow: hidden;display: inline-block;width: 100%;height: 306px;border: none;}
+.blog .articleList img {margin: 0 0 0 0;}
+.blog .articleText {display:block ; font-size: 1.6rem; text-align: justify; line-height: 1.4em;}
+
+.blog .articleInfo {display: block; margin: 5px 0px 15px 0px;}
+.blog .articleInfo .sep {display: block; height: 1px; border-bottom: 1px solid #E3E3E3; margin-bottom: 8px;}
+.blog .articleInfo .categories {height: 14px; background: url(https://medias-rct.lapostetelecom.local/portail_mobile/img/blog/pictos/picto-categorie.svg) no-repeat left; padding-left: 16px; color: #BEBEBE; font-size: 1.1rem; margin-left: 10px;}
+.blog .articleInfo .datePublication {height: 14px; background: url(https://medias-rct.lapostetelecom.local/portail_mobile/img/blog/pictos/picto-date.svg) no-repeat left; padding-left: 16px; color: #BEBEBE; font-size: 1.1rem; margin-left: 10px;}
+.blog .articleSuite {display: block; font-size:1.5rem; color:#3565a6; font-weight: bold; margin-top:12px; margin-bottom: 20px;}
+/* /ARTICLE PREVIEW*/
+
+/* FULL ARTICLE */
+.blog .titreUp h1{position: initial; color: #323232; font-size: 4.5rem;text-transform: uppercase; font-weight: bold; padding: 15px 15px 0px 15px;}
+.blog .articleList .visuelArticleFull {overflow: hidden;display: inline-block; width: 100%;height: 306px; margin-bottom: 40px; border: none;}
+.blog .articleTextFull {display:block ; font-size: 1.7rem; text-align: justify; line-height: 1.4em;}
+.blog .articleTextFull a{font-weight: bold; text-decoration: underline;}
+.blog .articleTextFull h2{display: block; font-weight: bold; font-size: 2.0rem; color: #323232; margin: 40px 0px 40px -20px;}
+.blog .articleTextFull .media {display:block ; margin: 30px 0px 30px 0px; font-size: 1.2rem; color: #999; text-align: center;}
+.partage {display: block; text-align: left; padding-top: 15px; border-top: 1px solid #E3E3E3; font-size:1.4rem; color:#666;}
+.partage span{display:block; padding-bottom: 10px;}
+.partage li img{max-height: 33px; max-width: 46px;}
+/* /FULL ARTICLE */
+
+.blog .articleBtn {display: block;margin: 0; text-align: center;}
+.blog .articleBtn:last-child {margin-bottom: 45px;}
+
+/* BLOC FORUM */
+.blog .blocForum {display: block; background-color: #F7F7F7; padding: 20px; color:#323232; margin-top: 15px; text-align: center;}
+.blog .blocForum .titre{display: block; font-size: 3.0rem; text-transform: uppercase; font-weight: bold; margin-bottom: 15px;}
+.blog .blocForum .txt{display: block; font-size: 1.9rem; margin-bottom: 30px;}
+.blog .blocForum img{max-height: 100px;margin-bottom: 20px;}
+/* BLOC FORUM */
+
+/* BLOC RECOS ARTICLES */
+.blog .blocRecos {color:#323232; margin-top: 50px;}
+.blog .blocRecos .titre{font-size: 3.5rem; height: 50px; border-bottom: 2px solid #666;}
+.blog .blocRecos .article{padding-top: 20px;font-size: 1.0rem;}
+/*.blog .blocRecos .article {overflow: hidden;display: inline-block; width: 60px;}*/
+.blog .blocRecos .article .visuelArticleReco{overflow: hidden;display: inline-block;width: 100%;height: 200px;border: none;}
+.blog .blocRecos .article span{position: absolute; left: 15px; color: #FFF; font-size: 4.6rem;text-transform: uppercase; font-weight: bold; padding: 15px 15px 0px 15px;
+/* Background dégradé */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.blog .blocRecos .article img {margin: 0 0 0 0;}
+/* /BLOC RECOS ARTICLES */

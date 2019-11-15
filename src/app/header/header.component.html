@@ -1,0 +1,426 @@
+<div class="container-fluid hidden" style="background-color: #F8CA1F; font-size : 13px; padding-top:20px;padding-bottom:20px;position:fixed;top:0;left:0; z-index:2000; min-height:80px;width:100%;" id="divCookie">
+        <div class="row">
+            <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1">
+                <div class="media-left media-middle text-justify">En poursuivant votre navigation sur ce site, sans modifier le paramétrage de vos cookies, vous acceptez l'utilisation des cookies susceptibles de vous proposer des services ou offres adaptés à vos centres d'intérêts et de réaliser des statistiques de visites. <a href='http://www.lapostemobile.fr/telephonie-mobile/cookies.asp' class="link underline">En savoir plus.</a></div>
+                <div class="media-right media-middle">
+                    <button type="button" class="btn" onclick='hideCookieInfo(); return false;' style="font-weight : bold;color:#fff; background-color:#000;">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <header id="siteHeader" class="header hidden-print">
+            <nav class="mainMenu row full cf">
+                <div id="siteTitle" class="logo col-xs-6 col-sm-3 col-md-2 fillH">
+                    <!-- <a href="<%=URL_PORTAIL %>" class="vaMidParent" title="La poste mobile"><img src="<%=URL_MEDIAS %>portail_mobile/img/logo-LPM.png" alt="La poste mobile" class="img-responsive vaMid"></a> -->
+                    <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-sans-engagement" class="vaMidParent" title="La poste mobile"><img src="" alt="La poste mobile" class="img-responsive vaMid"></a>
+                </div>
+                <div class="col-md-10 fillH hidden-xs hidden-sm mainMenuMenuWrapper">
+                    <div class="row fillH mainMenuMenu">
+                        <div class="col-md-10 fillH mainMenuWrapper">
+                            <ul class="row mainMenuItems">
+                                <li class="mainMenuItem col-md-3 forfait">
+                                    <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-sans-engagement" class="mainMenuLink" title="Forfaits"><span class="vaMid">Forfaits</span></a>
+                                    <!-- <a href="<%=URL_PORTAIL %>offres/#forfaits" class="mainMenuLink" title="Forfaits"><span class="vaMid">Forfaits</span></a> -->
+                                    <div class="mega row">
+                                        <div class="megaCol col-sm-4">
+                                            <div class="row">
+                                                <div class="title txtColor-forfait" title="Forfaits SIM">Forfaits SIM</div>
+                                                <ul>
+                                                    <!-- <li><a href="<%=URL_PORTAIL_PROCESS %>selection/forfaits-sans-engagement" title="Tous les Forfaits SIM">Tous les Forfaits SIM</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/forfaits-sans-engagement?criteres=14" title="Avec appels illimités">Avec appels illimités</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/forfaits-sans-engagement?criteres=13" title="Avec Internet mobile 4G">Avec Internet mobile 4G</a></li>
+                                                    <li><a href="<%=URL_PORTAIL %>appli-music.asp" title="Avec la musique en illimité">Avec la musique en illimité</a></li> -->
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-sans-engagement" title="Tous les Forfaits SIM">Tous les Forfaits SIM</a></li>
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-sans-engagement?criteres=14" title="Avec appels illimités">Avec appels illimités</a></li>
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-sans-engagement?criteres=13" title="Avec Internet mobile 4G">Avec Internet mobile 4G</a></li>
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/appli-music.asp" title="Avec la musique en illimité">Avec la musique en illimité</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <div class="title txtColor-mobile" title="Forfaits+Mobile">Forfaits+Mobile</div>
+                                                <ul>
+                                                    <!-- <li><a href="<%=URL_PORTAIL_PROCESS %>selection/forfaits-avec-mobile" title="Tous les Forfaits+Mobile">Tous les Forfaits+Mobile</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/forfaits-avec-mobile?criteres=14" title="Avec appels illimités">Avec appels illimités</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/forfaits-avec-mobile?criteres=13" title="Avec Internet mobile 4G">Avec Internet mobile 4G</a></li> -->
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile" title="Tous les Forfaits+Mobile">Tous les Forfaits+Mobile</a></li>
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile?criteres=14" title="Avec appels illimités">Avec appels illimités</a></li>
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile?criteres=13" title="Avec Internet mobile 4G">Avec Internet mobile 4G</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="megaCol col-sm-4">
+                                            <div class="row">
+                                                <div class="title txtColor-prepaid" title="Offres prépayées">Offres prépayées</div>
+                                                <ul>
+                                                    <!-- <li><a href="<%=URL_PORTAIL %>offres/prepaye-classique.asp" title="Les offres prépayées classiques">Prépayé classique</a></li>
+                                                    <li><a href="<%=URL_PORTAIL %>offres/prepaye-international.asp" title="Les offres prépayées internationales">Prépayé international</a></li> -->
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile/prepaye-classique.asp" title="Les offres prépayées classiques">Prépayé classique</a></li>
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile/prepaye-international.asp" title="Les offres prépayées internationales">Prépayé international</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <div class="title txtColor-quatro" title="Offres Box+Mobile">Offres Box+Mobile</div>
+                                                <ul>
+                                                    <!-- <li><a href="<%=URL_PORTAIL %>offres/box-et-mobile.asp" title="Les offres BOX+mobile">Les offres Box+Mobile</a></li> -->
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile/prepaye-international.asp" title="Les offres BOX+mobile">Les offres Box+Mobile</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <!-- <a href="<%=URL_PORTAIL %>promos.asp" class="button" title="Voir les promos Forfaits">Voir les promos</a> -->
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile/prepaye-international.asp" class="button" title="Voir les promos Forfaits">Voir les promos</a>
+                                            </div>
+                                        </div>
+                                        <div class="megaCol col-sm-4 promo bgColor-forfait">
+                                            <!-- <a href="<%=URL_PORTAIL_PROCESS %>selection/forfaits-sans-engagement?criteres=15" class="push"> -->
+                                                    <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile/prepaye-international.asp" class="push">
+                                                <div class="title">forfait sim</div>
+                                                <div class="subTitle">24/24 5Go + Musique en illimité</div>
+                                                <div class="price cf">
+                                                    <div class="int vaMid">9</div>
+                                                    <div class=" vaMid">
+                                                        <div class="cent">€99</div>
+                                                        <div class="period">/mois</div>
+                                                    </div>
+                                                </div>
+                                                <div class="more">Pendant 6 mois puis 18,99€/mois</div>
+                                                <div class="button" title="Profiter de l'offre"><span>Profiter de l'offre</span></div>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li class="mainMenuItem col-md-3 mobile">
+                                    <!-- <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables" class="mainMenuLink" title="Téléphones"><span class="vaMid">Téléphones</span></a> -->
+                                    <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="mainMenuLink" title="Téléphones"><span class="vaMid">Téléphones</span></a>
+                                    <div class="mega row">
+                                        <div class="megaCol col-sm-4">
+                                            <div class="row">
+                                                <div class="title txtColor-phone" title="Téléphones">Téléphones</div>
+                                                <ul>
+                                                    <!-- <li><a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables" title="Tous les téléphones">Tous les téléphones</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=4" title="Les téléphones simples">Les téléphones simples</a></li> -->
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="Tous les téléphones">Tous les téléphones</a></li>
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="Les téléphones simples">Les téléphones simples</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <div class="title txtColor-phone" title="Smartphones">Smartphones</div>
+                                                <ul>
+                                                    <!-- <li><a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=20002" title="Android">Android</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=20004" title="iPhones">iPhones</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=20003" title="Windows Phones">Windows Phones</a></li> -->
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="Android">Android</a></li>
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="iPhones">iPhones</a></li>
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="Windows Phones">Windows Phones</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="megaCol col-sm-4">
+                                            <div class="row">
+                                                <div class="title txtColor-phone" title="Marques">Marques</div>
+                                                <ul>
+                                                        <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="Apple">Apple</a></li>
+                                                        <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="Samsung">Samsung</a></li>
+                                                        <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="Sony">Sony</a></li>
+                                                        <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="LG">LG</a></li>
+                                                        <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="Wiko">Wiko</a></li>
+                                                    <!-- <li><a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=10004" title="Apple">Apple</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=10059" title="Samsung">Samsung</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=10065" title="Sony">Sony</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=10075" title="LG">LG</a></li>
+                                                    <li><a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=10085" title="Wiko">Wiko</a></li> -->
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <!-- <a href="<%=URL_PORTAIL %>promos.asp" class="button" title="Voir les promos Téléphones">Voir les promos</a> -->
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="button" title="Voir les promos Téléphones">Voir les promos</a>
+                                            </div>
+                                        </div>
+                                        <div class="megaCol col-sm-4 promo bgColor-phone">
+                                            <a href="#" class="push">
+                                                <div class="title">forfait sim</div>
+                                                <div class="subTitle">sans engagement</div>
+                                                <div class="price cf">
+                                                    <div class="int vaMid">6</div>
+                                                    <div class=" vaMid">
+                                                        <div class="cent">€99</div>
+                                                        <div class="period">/mois</div>
+                                                    </div>
+                                                </div>
+                                                <div class="more">Pendant 6 mois puis 9,99€/mois</div>
+                                                <div class="button" title="Profiter de l'offre"><span>Profiter de l'offre</span></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mainMenuItem col-md-3 box">
+                                    <!-- <a href="<%=URL_PORTAIL_THD %>" target="_blank" class="mainMenuLink" title="Box internet"><span class="vaMid">Box internet</span></a> -->
+                                    <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" target="_blank" class="mainMenuLink" title="Box internet"><span class="vaMid">Box internet</span></a>
+                                    <div class="mega row">
+                                        <div class="megaCol col-sm-4">
+                                            <!--<div class="row">
+                                                <div class="title txtColor-quatro" title="BOX ADSL de SFR">BOX ADSL de SFR</div>
+                                                <ul>
+                                                    <li><a href="<%=URL_PORTAIL_THD %>box-adsl-telephone.asp" title="La BOX ADSL de SFR">La BOX ADSL de SFR</a></li>
+                                                    <li><a href="#" title="Trouver un bureau de Poste">Trouver un bureau de Poste</a></li>
+                                                </ul>
+                                            </div>-->
+                                            <div class="row">
+                                                <div class="title txtColor-box" title="Box Fibre TV Plus">Box Fibre TV Plus</div>
+                                                <ul>
+                                                    <!-- <li><a href="<%=URL_PORTAIL_THD %>" target="_blank" title="La Box Fibre TV Plus">La Box Fibre TV Plus</a></li> -->
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" target="_blank" title="La Box Fibre TV Plus">La Box Fibre TV Plus</a></li> 
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <div class="title txtColor-quatro" title="Offres Box+Mobile">Remises Box+Mobile</div>
+                                                <ul>
+                                                    <!-- <li><a href="<%=URL_PORTAIL %>offres/box-et-mobile.asp" title="Les remises BOX+Mobile">Les remises</a></li> -->
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="Les remises BOX+Mobile">Les remises</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="megaCol col-sm-4">
+                                            <div class="row">
+                                                <div class="title txtColor-box" title="Eligibilité">&Eacute;ligibilité</div>
+                                                <ul>
+                                                    <!-- <li><a href="<%=URL_PORTAIL_THD %>order/pages/eligibilite" title="Tester votre éligibilité">Tester votre éligibilité</a></li> -->
+                                                    <li><a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" title="Tester votre éligibilité">Tester votre éligibilité</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <!-- <a href="<%=URL_PORTAIL %>promos.asp" class="button" title="Voir les box internet">Voir les promos</a> -->
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="button" title="Voir les box internet">Voir les promos</a>
+                                            </div>
+                                        </div>
+                                        <div class="megaCol col-sm-4 promo bgColor-box">
+                                            <!-- <a href="<%=URL_PORTAIL_THD %>" class="push"> -->
+                                                    <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="push">
+                                                <div class="title">Box Fibre TV</div>
+                                                <div class="price cf">
+                                                    <div class="int vaMid">16</div>
+                                                    <div class=" vaMid">
+                                                        <div class="cent">€99</div>
+                                                        <div class="period">/mois</div>
+                                                    </div>
+                                                </div>
+                                                <div class="more">Pendant 12 mois<br />
+                                                    au lieu de 33,99€/mois<br />
+                                                </div>
+                                                <div class="button" title="Profiter de l'offre"><span>Profiter de l'offre</span></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mainMenuItem col-md-3 promos">
+                                    <!-- <a href="<%=URL_PORTAIL %>promos.asp" class="mainMenuLink" title="Promos"><span class="vaMid">Promos</span></a> -->
+                                    <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="mainMenuLink" title="Promos"><span class="vaMid">Promos</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 espaceClient hidden-xs hidden-sm">
+                            <!-- <a href="<%=URL_ECARE %>mobile/Pages/Identification/Authentification.aspx" class="mainMenuLink" title="Espace Client"> -->
+                                    <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="mainMenuLink" title="Espace Client">
+                                <span>Espace Client</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <nav class="navMobile col-xs-6 col-sm-9 hidden-md hidden-lg">
+                    <div class="menuMobile pull-right">
+                        <a href="#" class="buttonMenuMobile"></a>
+                        <div class="menuMobileLayer cf ">
+                            <section class="mainMenuMobile">
+                                <div class="category">
+                                    <a href="#" title="Forfaits">Forfaits</a>
+                                    <ul class="categoryItems">
+                                        <!-- <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/forfaits-sans-engagement" class="link" title="Tous les Forfaits SIM">Tous les Forfaits SIM</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/forfaits-avec-mobile" class="link" title="Tous les forfaits+Mobile">Tous les forfaits+Mobile</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL %>prepaye-classique.asp" class="link" title="Les offres prépayées classiques">Prépayé classique</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL %>offres/prepaye-international.asp" class="link" title="Les offres prépayées internationales">Prépayé international</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL %>offres/box-et-mobile.asp" class="link" title="Les offres Box + Mobile">Les offres Box + Mobile</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL %>promos.asp" class="link" title="Voir les Promos forfaits">Voir les Promos forfaits</a>
+                                        </li> -->
+
+                                        <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Tous les Forfaits SIM">Tous les Forfaits SIM</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Tous les forfaits+Mobile">Tous les forfaits+Mobile</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Les offres prépayées classiques">Prépayé classique</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Les offres prépayées internationales">Prépayé international</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Les offres Box + Mobile">Les offres Box + Mobile</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Voir les Promos forfaits">Voir les Promos forfaits</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="category">
+                                    <a href="#" title="Téléphones">Téléphones</a>
+                                    <ul class="categoryItems">
+                                        <!-- <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables" class="link" title="Tous les téléphones">Tous les téléphones</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=4" class="link" title="Les téléphones simples">Les téléphones simples</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=20002" class="link" title="Android">Android</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=20004" class="link" title="iPhones">iPhones</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=20003" class="link" title="Windows Phones">Windows Phones</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=10004" class="link" title="Apple">Apple</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=10059" class="link" title="Samsung">Samsung</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=10065" class="link" title="Sony">Sony</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=10075" class="link" title="LG">LG</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL_PROCESS %>selection/nos-telephones-portables?criteres=10085" class="link" title="Wiko">Wiko</a>
+                                        </li> -->
+                                        <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Tous les téléphones">Tous les téléphones</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Les téléphones simples">Les téléphones simples</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Android">Android</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="iPhones">iPhones</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Windows Phones">Windows Phones</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Apple">Apple</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Samsung">Samsung</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Sony">Sony</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="LG">LG</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="Wiko">Wiko</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="category">
+                                    <a href="#" title="Box Internet">Box Internet</a>
+                                    <ul class="categoryItems">
+                                        <!-- <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL %>box-adsl-telephone.asp" class="link" title="La BOX ADSL de SFR">La BOX ADSL de SFR</a>
+                                        </li>
+                                      
+                                        <li class="categoryItem">
+                                            <a href="<%=URL_PORTAIL %>box-landing.asp" class="link" title="La BOX Fibre">La BOX Fibre</a>
+                                        </li>
+                                        <li class="categoryItem">
+                                            <a href="#" class="link" title="La BOX Fibre + TV">La BOX Fibre + TV</a>
+                                        </li> -->
+                                        <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="La BOX ADSL de SFR">La BOX ADSL de SFR</a>
+                                            </li>
+                                          
+                                            <li class="categoryItem">
+                                                <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link" title="La BOX Fibre">La BOX Fibre</a>
+                                            </li>
+                                            <li class="categoryItem">
+                                                <a href="#" class="link" title="La BOX Fibre + TV">La BOX Fibre + TV</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="category">
+                                    <a href="#" title="Promos">Promos</a>
+                                </div>
+                            </section>
+                            <section class="subMenuMobile">
+                                <ul class="subMenuItems fillH cf">
+                                    <li class="subMenuItem">
+                                        <a href="#" class="link picto-sim" title="Activer KIT Forfait SIM">
+                                            <span class="vaMid">Activer KIT Forfait SIM</span>
+                                        </a>
+                                    </li>
+                                    <!--<li class="subMenuItem">
+                                        <a href="#" class="link picto-geoloc" title="Bureaux de poste">
+                                            <span class="vaMid">Bureaux de poste</span>
+                                        </a>
+                                    </li>-->
+                                    <!-- <li class="subMenuItem">
+                                        <a href="<%=URL_ECARE %>mobile/Pages/Identification/Authentification.aspx" class="link picto-espaceClient" title="Espace Client">
+                                            <span class="vaMid">Espace Client</span>
+                                        </a>
+                                    </li>
+                                    <li class="subMenuItem">
+                                        <a href="<%=URL_PORTAIL %>contact.asp" class="link picto-sticky" title="Besoin d'aide ?">
+                                            <span class="vaMid">Besoin d'aide ?</span>
+                                        </a>
+                                    </li> -->
+                                    <li class="subMenuItem">
+                                            <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp class=" class="link picto-espaceClient" title="Espace Client">
+                                                <span class="vaMid">Espace Client</span>
+                                            </a>
+                                        </li>
+                                        <li class="subMenuItem">
+                                            <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link picto-sticky" title="Besoin d'aide ?">
+                                                <span class="vaMid">Besoin d'aide ?</span>
+                                            </a>
+                                        </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <!--<div class="panierMobile pull-right">
+                        <a href="#" class="buttonMenuMobile"></a>
+                    </div>-->
+                </nav>
+            </nav>
+            <nav class="headerSubMenu row hidden-xs hidden-sm center-block">
+                <ul class="subMenuItems fillH col-xs-12">
+                    <!-- <li class="subMenuItem fright">
+                        <a href="<%=URL_PORTAIL_ACTIVATION %>" class="link picto-sim" title="Activer KIT Forfait SIM"><span class="vaMid">Activer KIT Forfait SIM</span></a>
+                    </li> -->
+                    <li class="subMenuItem fright">
+                            <a href="https://portail-pro-rct.lapostetelecom.local/selection/forfaits-avec-mobile.asp" class="link picto-sim" title="Activer KIT Forfait SIM"><span class="vaMid">Activer KIT Forfait SIM</span></a>
+                        </li>
+
+                </ul>
+            </nav>
+    
+    
+        </header>
+    

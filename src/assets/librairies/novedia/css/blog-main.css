@@ -1,0 +1,11 @@
+.partage ul#liensPartage li {display: inline;}
+
+.bgColor-white {background-color: #FFF;}
+.bgColor-greyBloc {background-color: #F7F7F7;}
+
+.blog .tab a:hover { font-weight: bold;text-decoration: none;}
+.blog .menu li a.on{ font-weight: bold;text-decoration: none;}
+
+.navbar-header #triangle-menu{ display : inline-block; height : 0; width : 0; margin-top: 7px; border-top : 10px solid #888; border-right : 10px solid transparent; border-left : 10px solid transparent;}
+
+.blog .img-responsive {display:initial;}

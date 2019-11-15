@@ -1,0 +1,82 @@
+.display{display:none;}
+
+.navbar {margin-bottom: -1px;}
+.navbar-header {background-color: #323232; text-align: center;}
+.navbar-header .button{ text-align: center;}
+.navbar-header .titreM{ display: inline-block; vertical-align: top; font-size: 2.0rem; color: #888; padding-right: 10px;}
+.navbar-default, .navbar-default .navbar-collapse, .navbar-default .navbar-form {background-color: #323232; color: #CCC; border: none;}
+.navbar-nav li a{display: block; color: #FFF; text-align: center; font-size: 2.0rem; height: 64px; border-bottom: 1px solid #555; padding-top: 22px;}
+.navbar-default .navbar-nav li a{color: #FFF}
+.navbar-default .navbar-nav li a:hover{color: #FFF;}
+.navbar-toggle {float: none; margin-right: 0px; padding: 9px 50px;}
+
+.bgColor-blog{ background-color: #DDD}
+.blog h1{color: #FFF;}
+.blog h2{text-align: center; font-size: 3.0rem; font-weight: bold; color: #999;margin: 65px 0 45px; padding-left: 20px;}
+
+.headerBlog { height: 128px; padding-top: 20px; background: url("https://medias-rct.lapostetelecom.local/portail_mobile/img/blog/header-blog-sm.jpg") no-repeat left center; margin: 0; text-align:center; color:white;}
+
+.container_rs{ height: 55px; background-color: rgba(50, 50, 50, 1); font-size: 1.2rem; color: #FFF;}
+	
+.container_rs .col-xs-12{padding-top:15px;}
+.container_rs .pictos{padding:8px 5px 0px 5px;}
+.blog .tabRS .pictos img{max-width: 48px; max-height: 30px;} 
+
+/* ARTICLE PREVIEW */
+.blog .articleList {background-color: #FFF;}
+.blog h3{display: block; background-color: ; width: 95%; position: absolute; top: -332px; text-align: left; color: #FFF; font-size: 2.8rem;text-transform: uppercase; font-weight: bold;  padding: 15px 15px 0px 15px;
+/* Background dégradé */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.blog .articleList .visuelArticle {overflow: hidden;display: inline-block; width: 100%;height: 306px;border: none;}
+.blog .articleList .visuelArticle img {display: block; width: auto;}
+.blog .articleList img {margin: 0 0 0 0; }
+.blog .articleText {display:block ; font-size: 1.6rem; text-align: justify; line-height: 1.6em;}
+
+.blog .articleInfo {display: block; margin: 5px 0px 15px 0px;}
+.blog .articleInfo .sep {display: block; height: 1px; border-bottom: 1px solid #E3E3E3; margin-bottom: 8px;}
+.blog .articleInfo .categories {height: 14px; background: url(https://medias-rct.lapostetelecom.local/portail_mobile/img/blog/pictos/picto-categorie.svg) no-repeat left; padding-left: 16px; color: #BEBEBE; font-size: 1.1rem; margin-left: 10px;}
+.blog .articleInfo .datePublication {height: 14px; background: url(https://medias-rct.lapostetelecom.local/portail_mobile/img/blog/pictos/picto-date.svg) no-repeat left; padding-left: 16px; color: #BEBEBE; font-size: 1.1rem; margin-left: 10px;}
+.blog .articleSuite {display: block; font-size:1.5rem; color:#3565a6; font-weight: bold; margin-top:12px; margin-bottom: 20px;}
+/* /ARTICLE PREVIEW*/
+
+/* FULL ARTICLE */
+.blog .articleList .visuelArticleFull {overflow: hidden;display: inline-block; width: 100%;height: 306px; margin-bottom: 40px; border: none;}
+.blog .articleTextFull {display:block ; font-size: 1.9rem; text-align: justify; line-height: 1.6em;}
+.blog .articleTextFull a{font-weight: bold; text-decoration: underline;}
+.blog .articleTextFull h2{display: block; font-weight: bold; font-size: 2.0rem; color: #323232; margin: 40px 0px 40px -20px;} 
+.blog .articleTextFull .media {display:block ; margin: 30px 0px 30px 0px; font-size: 1.2rem; color: #999; text-align: center;}
+.blog .titreUp h1{position: initial; color: #323232; font-size: 2.8rem;text-transform: uppercase; font-weight: bold; padding: 15px 15px 0px 15px;}
+.partage {display: block; text-align: left; padding-top: 15px; border-top: 1px solid #E3E3E3; font-size:1.4rem; color:#666;}
+.partage span{display:block; padding-bottom: 22px;}
+.partage li img{max-height: 40px; max-width: 64px;}
+/* /FULL ARTICLE */
+
+.blog .articleBtn {display: block;margin: 0; text-align: center;margin-bottom: 20px;}
+
+/* BLOC FORUM */
+.blog .blocForum {display: block; background-color: #F7F7F7; padding: 20px; color:#323232; margin-top: 15px; text-align: center;}
+.blog .blocForum .titre{display: block; font-size: 3.0rem; text-transform: uppercase; font-weight: bold; margin-bottom: 15px;}
+.blog .blocForum .txt{display: block; font-size: 2.5rem; margin-bottom: 30px;}
+.blog .blocForum img{max-height: 100px;margin-bottom: 20px;}
+/* BLOC FORUM */
+
+/* BLOC RECOS ARTICLES */
+.blog .blocRecos {color:#323232; margin-top: 50px;}
+.blog .blocRecos .titre{font-size: 3.5rem; height: 50px; border-bottom: 2px solid #666;}
+.blog .blocRecos .article{padding-top: 20px;font-size: 1.0rem;}
+/*.blog .blocRecos .article {overflow: hidden;display: inline-block; width: 60px;}*/
+.blog .blocRecos .article .visuelArticleReco{overflow: hidden;display: inline-block;width: 100%;height: 174px;border: none;}
+.blog .blocRecos .article span{position: absolute; left: 15px; color: #FFF; font-size: 2.8rem;text-transform: uppercase; font-weight: bold; padding: 15px 15px 0px 15px;
+/* Background dégradé */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.blog .blocRecos .article img {margin: 0 0 0 0;}
+/* /BLOC RECOS ARTICLES */

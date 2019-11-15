@@ -1,0 +1,186 @@
+﻿/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+img,legend{border:0}legend,td,th{padding:0}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{margin:.67em 0;font-size:2em}mark{color:#000;background:#ff0}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{height:0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{margin:0;font:inherit;color:inherit}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}input{line-height:normal}input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{padding:.35em .625em .75em;margin:0 2px;border:1px solid silver}table{border-spacing:0;border-collapse:collapse}
+
+
+body {
+    color:#323232;
+	font-family: Verdana, arial, sans-serif;
+    font-size : 15px;
+    line-height : 1.42857143;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color : #f3f3f3;
+    max-width : 1200px;
+    padding : 0 5px;
+    min-width : 310px;
+}
+.sips_shop_name_font {
+    display: none;
+}
+img[alt="logo_commun"] {
+    display : none;
+}
+input[type="text"], select{
+    padding : 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input[type="text"]:focus, select:focus {
+    border-color: rgba(180, 180, 180, 0.8) !important;
+    outline: 0 none !important;
+    -webkit-box-shadow:  0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(180, 180, 180, 0.6) !important;
+    box-shadow:          0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(180, 180, 180, 0.6) !important;
+}
+input[type="text"] {
+    height : 20px;
+}
+select {
+    height : 34px;
+}
+table.sips_shop_name_table {
+    display : inline-block;
+    background-image: url(https://medias.lapostemobile.fr/portail_fibre/img/header-sips.png); /*(1118*337)*/
+    background-repeat : no-repeat;
+    background-size : cover;
+    width: 100vw;
+    height: 30.14vw; /*100*337/1118*/
+    max-width : 1200px;
+    max-height : 361.7px; /*337*1200/1118*/
+    margin-left : -5px;
+    margin-right : -5px;
+}
+.sips_logo {
+    margin-left : 5px;
+}
+table.sips_trans_ref_table {
+    background-color : #fff;
+}
+table.sips_trans_ref_table td{
+    padding : 5px;
+}
+#span_sips_trans_ref_table_id_customer, #span_sips_trans_ref_table_id_transaction, #span_sips_trans_ref_table_amount_transaction,
+#span_sips_trans_ref_table_date, #span_sips_trans_ref_table_url, #span_sips_trans_ref_msg_cardholder_nb, #span_sips_trans_ref_card_auth_nb, #span_sips_trans_ref_card_auth_certif {
+    color : #808080;
+}
+#CARD_NUMBER {
+    margin-top : 10px;
+    margin-right : 10px;
+    width : 40vw;
+    max-width : 638px;
+    min-width : 144px;
+}
+.sips_expiry_month_card_input {
+    margin-top : 10px;
+}
+#CVV_KEY {
+    margin : 10px;
+}
+form[name="DATA_CAPTURE"] {
+    background-color : #fff;
+}
+form {
+    padding : 10px;
+}
+.sips_cryptogram_table {
+    border : 1px solid #c0c0c0;
+}
+.sips_cryptogram_table td {
+    padding : 10px;
+}
+.sips_cryptogram_example, .sips_cryptogram_example:visited, .sips_cryptogram_example:focus {
+    color : #323232;
+}
+
+
+@media (max-width : 991px) {
+    table.sips_shop_name_table {
+        background-image: url(https://medias.lapostemobile.fr/portail_fibre/img/header-sips-sm.png); /*965*222*/
+        height: 23vw; /*100*222/965*/
+        /*min-width : 320px;
+        min-height : 73.6px; 222*320/965*/
+    }
+    .sips_logo {
+        display : none;
+    }
+    #CARD_NUMBER {
+        width : 80vw;
+        max-width : 800px;
+    }
+    #ID_EXPIRE_FIN {
+        margin-right : 16px;
+    }
+    #span_sips_submit_message::after {
+        display : block;
+        content : " ";
+    }
+    form {
+        padding : 10px 5px;
+    }
+    form input[type="image"] {
+        display : block;
+        margin : auto;
+        margin-top : 10px;
+    }
+}
+@media (max-width : 550px) {
+    table.sips_shop_name_table {
+        background-image: url(https://medias.lapostemobile.fr/portail_fibre/img/header-sips-xs.png); /*743*222*/
+        height: 29.87vw; /*100*222/743*/
+        min-width: 320px;
+        min-height: 95.61px; /*222*320/743*/
+    }
+}
+
+
+@media (max-width : 791px){
+    #CARD_NUMBER {
+        width : 75vw;
+    }
+}
+@media (max-width : 633px){
+    #CARD_NUMBER {
+        width : 70vw;
+    }
+}
+@media (max-width : 530px){
+    #CARD_NUMBER {
+        width : 65vw;
+    }
+}
+@media (max-width : 451px){
+    #CARD_NUMBER {
+        width : 58vw;
+    }
+}
+@media (max-width : 430px){
+    #CARD_NUMBER {
+        width : 53vw;
+    }
+}
+@media (max-width : 360px){
+    #CARD_NUMBER {
+        width : 50vw;
+    }
+}
+@media (max-width : 349px){
+    #CARD_NUMBER {
+        width : 45vw;
+    }
+}
+
+@media (max-width : 378px){
+    .sips_expiry_year_card_input{
+        margin-left : 101px;
+        margin-top : 10px;
+    }
+}

@@ -1,0 +1,37 @@
+﻿.sectionLPM .row {
+margin:0 auto !important;}
+
+.container_detail_offre h2{padding-left:10px;padding-bottom:15px;text-transform:uppercase;font-size:24px;}
+.bouton_detail_offre_sim {display:block; background:url('https://medias-rct.lapostetelecom.local/portail_mobile/img/picto_download_03.png') no-repeat left center;padding-left:45px;padding-right:25px;}
+.bouton_detail_offre_sim:hover {display:block; background:url('https://medias-rct.lapostetelecom.local/portail_mobile/img/picto_download_hover_03.png') no-repeat left center;padding-left:45px;padding-right:25px;text-decoration:underline;}
+.bouton_detail_offre_fam {display:block; background:url('https://medias-rct.lapostetelecom.local/portail_mobile/img/picto_download_03.png') no-repeat left center;padding-left:45px;padding-right:25px;}
+.bouton_detail_offre_fam:hover {display:block; background:url('https://medias-rct.lapostetelecom.local/portail_mobile/img/picto_download_hover_fam_03.png') no-repeat left center;padding-left:45px;padding-right:25px;text-decoration:underline;}
+.container_detail_offre section {margin-bottom:25px;}
+
+@media (min-width:1200px){
+.container_detail_offre{margin:0 auto;background:#f3f3f3;padding-top:5px;padding-bottom:5px;height:220px;text-align:center;}
+.inline{display:inline-block;}
+.container_footer{margin:0 auto;background:#f3f3f3;padding-top:25px;padding-bottom:25px;}
+.container_footer article{width:20%;text-align:center;}
+}
+
+@media (min-width:990px) and (max-width:1199px){
+.container_detail_offre{width:95%;margin:0 auto;background:#f3f3f3;padding-top:25px;padding-bottom:25px;height:250px;}
+.inline{display:inline-block;}
+.container_footer{width:95%;margin:0 auto;background:#f3f3f3;padding-top:25px;padding-bottom:25px;}
+.container_footer article{width:20%;text-align:center;}
+}
+
+@media (min-width:767px) and (max-width:990px){
+.container_detail_offre{width:766px;margin:0 auto;background:#f3f3f3;padding-top:5px;padding-bottom:25px;height:320px;}
+.inline{display:block; margin-bottom:10px;}
+.container_footer{display:none;}
+
+}
+
+@media (max-width:766px){
+.container_detail_offre{width:90%; margin:0 auto;background:#f3f3f3;padding-top:5px;padding-bottom:25px;height:320px;}
+.inline{display:block; margin-bottom:10px;}
+.btn-BlackWhite{font-size:12px;}
+.container_footer{display:none;}
+}

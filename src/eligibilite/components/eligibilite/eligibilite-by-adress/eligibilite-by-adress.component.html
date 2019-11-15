@@ -1,0 +1,55 @@
+<div class="container"> 
+ 
+
+    <div class="row col-md-12" >
+        <div class="row col-md-6" >
+          <a  class="text-warning stretched-link" (click)="displayEligByAdress()" href="#" >Renseignez votre adresse</a>
+        </div> 
+      </div> 
+
+
+  
+</div>
+<br>
+<div class="container"> 
+    <div class="form-group row" *ngIf="displayCodePostal" >
+        <label for="codePostal " class="col-sm-2 col-form-label">Code Postal </label>
+        <div class="col-sm-3">
+        <input  [(ngModel)]="codePostal" 
+            maxlength="5" class="form-control" placeholder="Code postal*" 
+            (ngModelChange)="codePostalChange($event)"
+            pattern="[0-9]{5}" title="Code postal à 5 chiffres.">
+          </div>
+        
+    </div> 
+    <div class="form-group row" *ngIf="displayAdress" >
+        <label for="adress" class="col-sm-2 col-form-label">Adress</label>
+        <div class="col-sm-3">
+            <input   [(ngModel)]="adress"  class="form-control" placeholder="adress*" title="adress">
+        
+          </div>
+      </div> 
+      <div class="form-group row" *ngIf="displayCommune">
+            <label for="voie" class="col-sm-2 col-form-label">Commune</label>
+            <div class="col-sm-10">
+                <select class="form-control" [(ngModel)]="eligibiliteByAdress.commune" style="width: 130px" id="commune" name="commune">
+                    <option *ngFor="let commune of communeList" [value]="commune.value">
+                      {{commune.display}} 
+                    </option>
+                  </select>
+            </div>
+        </div>
+
+        <div class="form-group row"  *ngIf="displayVoie">
+                <label for="voie" class="col-sm-2 col-form-label">Voie</label>
+                <div class="col-sm-10">
+                    <select class="form-control" [(ngModel)]="eligibiliteByAdress.voie" style="width: 130px" id="voie" name="voie">
+                      <option *ngFor="let voie of voieList" [value]="voie.value">
+                        {{voie.display}} 
+                      </option>
+                    </select>
+          
+                </div>
+         </div>
+  
+</div>

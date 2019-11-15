@@ -1,0 +1,548 @@
+/******** BASE ********/
+
+body{
+  font-family: Nexa, sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+a, a:hover, a:focus{
+  text-decoration: none;
+  color: inherit;
+}
+
+h2, h3{
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  margin: 70px 0;
+  font-size: 26px;
+}
+
+@media (max-width: 767px){
+  h2, h3{
+    margin-bottom: 30px;
+  }
+}
+
+.button_tester{
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.button_tester:before{
+  content:url(https://medias.lapostemobile.fr/portail_fibre/img/hp-box/picto_home.png);
+  vertical-align: sub;
+  padding-right: 10px;
+}
+
+/******** HEADER ********/
+
+.section_top{
+  background-color: #00b6f0;
+  padding: 42px 0 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section_top .push {
+  padding: 0;
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+}
+
+.section_top .top_title{
+  color: #fff;
+}
+
+.section_top .top_title h1{
+  font-weight: 900;
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.section_top .top_title p{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.section_top .top_button{
+  margin-top: 5px;
+  padding: 15px 30px 12px 28px;
+  transition: ease all 0.4s;
+  background-color: #333;
+}
+
+.section_top .top_button:hover{
+  background-color: #000;
+}
+
+@media (min-width: 768px){
+  .section_top{
+    background: url(https://medias.lapostemobile.fr/portail_fibre/img/hp-box/1540x400_cover_hp.jpg) #00b6f0 no-repeat center center;
+    height: 400px;
+  }
+  .section_top .pushOffre {
+    position: absolute;
+    right: 50%;
+    margin-right: 0px;
+    text-align: left;
+    top: 0px;
+  }
+
+  .section_top .push {
+    width: 500px;
+    position: absolute;
+    right: 50%;
+    margin-right: -515px;
+    text-align: left;
+  }
+}
+
+/******** OFFRES ********/
+
+.section_offres{
+  margin-top: 30px;
+}
+
+.section_offres hr {
+  margin: 15px 0 15px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
+
+.section_offres .offre_container{
+  background-color: #e9e9e9;
+  text-align: center;
+  line-height: initial;
+  padding: 18px;
+  margin-bottom: 15px;
+}
+.section_offres .offre_container sup{
+  font-size: xx-small;
+}
+.section_offres .price{
+  color: #00b6f0;
+  font-weight: 900;
+}
+
+.section_offres .int{
+  font-size: 75px;
+  font-weight: 900;
+  line-height: initial;
+}
+
+.section_offres .vaTop{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section_offres .cent{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.section_offres .period{
+  font-size: 13px;
+  text-align: center;
+}
+
+.section_offres .logo_box{
+  margin: 10px auto;
+  max-height: 51px;
+}
+
+.section_offres .offreDetailsBleus{
+  color: #00b6f0;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.section_offres .engagementDetailsPrix{
+  font-size: 13px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.section_offres .engagementTitle{
+  font-size: 30px;
+  font-weight: 900;
+  margin: 20px 0 0 0;
+}
+
+.section_offres .engagementDuree{
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.section_offres .offre_contenu img, .section_offres .offre_option .optionImg{
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.section_offres .contenuTitle{
+  text-transform: uppercase;
+  margin-top: 25px;
+  font-weight: 900;
+}
+
+.section_offres .offre_option{
+  border: solid 1px;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.section_offres .offre_option hr {
+  margin: 10px 0;
+}
+
+.section_offres .optionTitle{
+  background-color: #e9e9e9;
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  top: -10px;
+  left: 70px;
+  right: 70px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.section_offres .optionAbo p, .section_offres .optionAbo img{
+  display: inline-block;
+}
+
+.section_offres .optionAbo p{
+  margin-left: 10px;
+}
+
+.section_offres .offre_materiel img{
+  margin: 20px auto;
+}
+
+.section_offres .materielTitle{
+  font-weight: bold;
+  margin-top: 20px;
+  /*font-weight: 900; */
+}
+
+.section_offres .offre_materiel a{
+  font-weight: 900;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 18px 10px 15px;
+  margin-top: 95px;
+  display: block;
+  margin: 30px 0;
+  transition: ease all 0.4s;
+}
+
+.section_offres .offre_materiel a:hover{
+  background-color: #000;
+  color: #FFF;
+}
+
+.section_offres .panel{
+  background-color: transparent;
+  box-shadow:none;
+  margin-bottom: 0;
+}
+
+.section_offres .panel .offre_details{
+  font-size: 18px;
+  font-family: Nexa-bold;
+  position: relative;
+  padding-bottom: 35px ;
+  cursor: pointer;
+  margin: 0;
+}
+
+.section_offres .panel .offre_details:after{
+  position: absolute;
+  right: 5px;
+  left: 5px;
+  top: 30px;
+}
+
+.section_offres .panel .offre_details:after{
+  content:url(https://medias.lapostemobile.fr/portail_fibre/img/hp-box/picto_close_offre.png)
+}
+
+.section_offres .collapsed .offre_details:after{
+  content:url(https://medias.lapostemobile.fr/portail_fibre/img/hp-box/picto_open_offre.png)!important;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .section_offres .offre_container{
+    padding: 10px;
+  }
+
+  .section_offres .optionTitle{
+    left: 10px;
+    right: 10px;
+  }
+
+  .section_offres .offre_materiel a{
+    padding: 18px 2px 15px;
+  }
+}
+
+@media (min-width: 992px){
+  .section_offres .panel{
+    margin-top: -25px;
+  }
+
+  .section_offres .offres_collapsed{
+    display: none;
+  }
+
+  .section_offres .collapse{
+    display: block;
+  }
+}
+
+@media (max-width: 767px){
+  .section_offres .offre_btn{
+    padding-top: 8px;
+    font-size: 12px;
+  }
+
+  .section_offres .optionAbo p{
+    margin: 0;
+  }
+}
+
+@media (max-width: 414px){
+  .section_offres .optionTitle{
+    left: 10px;
+    right: 10px;
+  }
+
+  .section_offres .optionAbo img {
+    margin-bottom: 10px;
+  }
+}
+
+/************ PETIT PLUS **************/
+
+.section_avantages .avantagesItem{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section_avantages img{
+  max-height: 65px;
+  margin-bottom: 25px;
+}
+
+.section_avantages .avantagesTitle{
+  color: #00b6f0;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.section_avantages .avantagesML{
+  font-size: 10px;
+}
+
+/************ FAQ **************/
+
+.faq{
+  background-color: #e9e9e9;
+  padding:  0 0 50px 0;
+}
+
+.faq .panel{
+  background-color: transparent;
+}
+
+.faq .panel-body{
+    padding: 30px;
+}
+
+.faq .panel-heading{
+  position: relative;
+  padding: 0;
+}
+
+.panel-default>.panel-heading {
+  color: #505050;
+  border-bottom: #cccccc solid 1px;
+}
+
+.panel-default:last-child>.panel-heading{
+  border-bottom:none;
+}
+
+.faq .panel-default{
+  border: none;
+}
+
+.faq .panel-heading a{
+  transition: ease all 0.4s;
+        background-color: #e9e9e9;
+}
+
+.faq .panel-heading a:hover, .panel-heading a:focus{
+  color: #00b6f0;
+}
+
+
+.faq .panel-default>.panel-heading+.panel-collapse>.panel-body{
+  border: none;
+}
+
+.faq .collapsed:before, .faq h4 a:after{
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  margin-top: -18px;
+}
+
+.faq .collapsed:after{
+  content:url(https://medias.lapostemobile.fr/portail_fibre/img/hp-box/picto_open.png)
+}
+
+.faq h4 a:after{
+  content:url(https://medias.lapostemobile.fr/portail_fibre/img/hp-box/picto_close.png)
+}
+
+.faq h4 a{
+  padding: 10px 0;
+  width: 100%;
+  display: block;
+}
+
+.faq h4 a span{
+  display: block;
+  width: 90%;
+  font-weight: 900;
+}
+
+.faq .faqLink{
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+@media (min-width: 768px){
+  .faq h4 a span{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px){
+  .faq .panel-body{
+      padding: 30px 0;
+  }
+
+
+}
+
+
+/************ ML **************/
+
+.ml_section{
+  padding: 5px 20px;
+  margin: 20px 0 40px;
+}
+
+.ml_section .mlFicheLink ul{
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 60px;
+}
+
+.ml_section .mlFicheLink ul a{
+  font-size: 12px;
+}
+
+.ml_section .mlFicheLink ul a span{
+  text-decoration: underline;
+}
+
+.ml_section .ml_text{
+  font-size: 10px;
+}
+
+.ml_section a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 991px){
+.ml_section{
+    margin-top:5px;
+  }
+  .section_avantages .avantagesItem{
+    text-align: center;
+    margin-bottom: 138px;
+  }
+
+}
+
+/************ STICKY **************/
+
+.offer_sticky{
+  width: 100%;
+  background-color: rgba(0, 182, 240, 0.94);
+  position: fixed;
+  top: 0;
+  color: #fff;
+  text-align: center;
+  display: none;
+  z-index: 2;
+}
+
+.offer_sticky a{
+  background-color: #333;
+  padding: 10px 25px 10px 23px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: ease all 0.4s;
+}
+
+.offer_sticky a:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 767px){
+  .offer_sticky{
+    background-color: rgba(255, 255, 255, 0.94);
+    color: #333333;
+  }
+
+  .offer_sticky a{
+    background-color: #00b6f0;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .offer_sticky p{
+    margin: 10px;
+    font-size: 13px;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 768px){
+  .offer_sticky{
+    height: 72px;
+  }
+  .offer_sticky a, .offer_sticky p{
+    display:  inline-block;
+  }
+
+  .offer_sticky a{
+    margin-top: 10px;
+  }
+
+  .offer_sticky p{
+    margin-right: 50px;
+  }
+}

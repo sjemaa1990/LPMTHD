@@ -25,9 +25,27 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/assets/librairies/novedia/css/reset.css",
+              "src/assets/librairies/novedia/css/swiper.min.css",
+              "src/assets/librairies/bootstrap/css/bootstrap.min.css",
+              "src/assets/librairies/novedia/css/main.css",
+              "src/assets/librairies/bootstrap/css/font-awesome.min.css",
+              "src/assets/librairies/bootstrap/css/bootstrap-select.min.css",
+              "src/assets/librairies/selectize/css/selectize.bootstrap3.css",
+              "src/assets/portail_fibre/css/lpm.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/librairies/novedia/js/swiper.jquery.min.js",
+              "src/assets/librairies/bootstrap/js/bootstrap.min.js",
+              "src/assets/librairies/novedia/js/main.js",
+              "src/assets/portail_fibre/js/lpm.js",
+              "src/assets/librairies/autres/js/lpm.js",
+              "src/assets/librairies/bootstrap/js/ie10-viewport-bug-workaround.js",
+              "src/assets/librairies/bootstrap/js/bootstrap-select.min.js",
+              "src/assets/librairies/autres/js/breakpoints.js",
+              "src/assets/librairies/selectize/js/selectize.min.js",
+              "src/assets/librairies/LazyLoad/lazysizes.min.js"
+            ]
           },
           "configurations": {
             "production": {

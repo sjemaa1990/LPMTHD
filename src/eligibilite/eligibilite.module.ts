@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { EligibiliteComponent } from './components/eligibilite/eligibilite.component';
 import { RouterModule } from '@angular/router';
 import { EligibiliteByNdiService } from 'src/eligibilite/providers/eligibilite-by-ndi.service';
-import { EligibiliteByAdressComponent } from 'src/eligibilite/components/eligibilite-by-adress/eligibilite-by-adress.component';
-import { EligibiliteByNdiComponent } from 'src/eligibilite/components/eligibilite-by-ndi/eligibilite-by-ndi.component';
+import { EligibiliteByAdressComponent } from 'src/eligibilite/components/eligibilite/eligibilite-by-adress/eligibilite-by-adress.component';
+import { EligibiliteByNdiComponent } from 'src/eligibilite/components/eligibilite/eligibilite-by-ndi/eligibilite-by-ndi.component';
 
 
 import {FormsModule} from '@angular/forms'
