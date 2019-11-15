@@ -35,6 +35,8 @@
               "src/assets/portail_fibre/css/lpm.css"
             ],
             "scripts": [
+              //"src/assets/librairies/jquery/jquery-3.4.0.min.js",
+              "src/assets/librairies/kameleoon/kameleoon_head.js",
               "src/assets/librairies/novedia/js/swiper.jquery.min.js",
               "src/assets/librairies/bootstrap/js/bootstrap.min.js",
               "src/assets/librairies/novedia/js/main.js",
@@ -45,6 +47,7 @@
               "src/assets/librairies/autres/js/breakpoints.js",
               "src/assets/librairies/selectize/js/selectize.min.js",
               "src/assets/librairies/LazyLoad/lazysizes.min.js"
+              
             ]
           },
           "configurations": {
