@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { EligibiliteByAdress } from 'src/eligibilite/models/eligibiliteByAdress';
+import { EligibiliteByAdress } from 'src/eligibilite/models/eligibiliteByAdress.model';
 
 @Component({
   selector: 'app-eligibilite-by-adress',
@@ -18,16 +18,13 @@ export class EligibiliteByAdressComponent implements OnInit {
   adress: string = '';
   communeList = [{value: 'Nanterre', display: 'Nanterre'}, {value: 'Chaville', display: 'Chaville'}];
   voieList = [{value: '1', display: '1'}, {value: '2', display: '2'},{value: '3', display: '3'}];
-  eligibiliteByAdress: any = {} ;
+  eligibiliteByAdress: EligibiliteByAdress = new EligibiliteByAdress(null,'adress','complem', 'Chaville',3) ;
+
   
   
  constructor(private router: Router) { }
 
  ngOnInit() {
-   this.eligibiliteByAdress.adress;
-   this.eligibiliteByAdress.codePostal = '';
-   this.eligibiliteByAdress.commune = 'Chaville';
-   this.eligibiliteByAdress.voie = '3';
 
    this.displayCodePostal = false;
    this.displayAdress = false;

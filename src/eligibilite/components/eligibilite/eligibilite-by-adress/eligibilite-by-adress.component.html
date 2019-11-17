@@ -15,7 +15,7 @@
     <div class="form-group row" *ngIf="displayCodePostal" >
         <label for="codePostal " class="col-sm-2 col-form-label">Code Postal </label>
         <div class="col-sm-3">
-        <input  [(ngModel)]="codePostal" 
+        <input  [(ngModel)]="eligibiliteByAdress.codePostal" 
             maxlength="5" class="form-control" placeholder="Code postal*" 
             (ngModelChange)="codePostalChange($event)"
             pattern="[0-9]{5}" title="Code postal à 5 chiffres.">
@@ -25,7 +25,7 @@
     <div class="form-group row" *ngIf="displayAdress" >
         <label for="adress" class="col-sm-2 col-form-label">Adress</label>
         <div class="col-sm-3">
-            <input   [(ngModel)]="adress"  class="form-control" placeholder="adress*" title="adress">
+            <input   [(ngModel)]="eligibiliteByAdress.adress"  class="form-control" placeholder="adress*" title="adress">
         
           </div>
       </div> 
