@@ -40,7 +40,11 @@
               "src/assets/librairies/kameleoon/kameleoon_head.js",
               "src/assets/librairies/novedia/js/swiper.jquery.min.js",
               "src/assets/librairies/bootstrap/js/bootstrap.min.js",
-              "src/assets/librairies/novedia/js/main.js",
+              {
+                "input":"src/assets/librairies/novedia/js/main.js",
+                "lazy": true,
+                "bundleName": "lazy-loaded-script"
+              },
               "src/assets/portail_fibre/js/lpm.js",
               "src/assets/librairies/autres/js/lpm.js",
               "src/assets/librairies/bootstrap/js/ie10-viewport-bug-workaround.js",
