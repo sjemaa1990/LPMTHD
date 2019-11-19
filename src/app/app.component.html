@@ -15,10 +15,10 @@
             </div>
         </div>
         <div id="divCall" runat="server">
-            <div class="besoinAide sectionLPM">
+            <div class="besoinAide sectionLPM" [ngStyle]="besoiAideStyle">
                 <div class="td" id="openWebCall">
                     <!-- <img src="<%=LPM.THD_Portail.Client.TOutils.GetParametre("URL_MEDIAS") %>img/sticker-btn-open.png" alt="Besoin d'aide?" role="button" class="poignee" /></div> -->
-                    <img src="https://medias.lapostemobile.fr/portail_fibre/img/sticker-btn-open.png" alt="Besoin d'aide?" role="button" class="poignee" />
+                    <img [src]="poigneeSrc" alt="Besoin d'aide?" role="button" class="poignee" (click)="onPoigneeClick()" />
                 <div class="td" id="webcall">
                     <a href="tel:0805305009" target="_blank" class="hidden-md hidden-lg">
                         <!-- <img src="<%=LPM.THD_Portail.Client.TOutils.GetParametre("URL_MEDIAS") %>img/sticker-btn-contact.png" alt="Besoin d'aide?" /> -->
@@ -34,7 +34,7 @@
             </div>
         </div>
         <router-outlet></router-outlet>
-        <!-- <div  id="DivIncludeFooter"></div> -->
+   
         <app-footer></app-footer>
     </div>
 

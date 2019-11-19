@@ -257,8 +257,8 @@ function createCookie(name, value, expire) {
     else
         dateExpiration.setUTCMonth(dateExpiration.getUTCMonth() - 1);
 
-    document.cookie = name + "=" + value + ";expires=" + dateExpiration + ";domain=" + cookieDomain + ";path=/";
-	document.cookie = name + "=" + value + ";expires=" + dateExpiration + ";domain=" + cookieDomain + ";";
+    // document.cookie = name + "=" + value + ";expires=" + dateExpiration + ";domain=" + cookieDomain + ";path=/";
+	// document.cookie = name + "=" + value + ";expires=" + dateExpiration + ";domain=" + cookieDomain + ";";
 }
 
 function readCookie(name) {
