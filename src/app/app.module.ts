@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component'
+import { ParametreService } from './providers/parametre.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,13 @@ import { HeaderComponent } from './header/header.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     SharedModule,
     EligibiliteModule,
     OffreModule,
     FormsModule,  // to use ngmodule
   ],
-  providers: [],
+  providers: [ParametreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

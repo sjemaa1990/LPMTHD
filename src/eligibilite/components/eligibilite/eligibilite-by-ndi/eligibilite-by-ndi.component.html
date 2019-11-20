@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="container"> 
  
     <div class="row" >
@@ -24,4 +24,46 @@
                   </div>
         </div>
 </div>
+ -->
 
+
+
+  <!-- TEST VIA NDI -->
+  <div id="div_test_ndi">
+    <div id="ContentPlaceHolder1_div_head_mediapost">
+        <h1 class="modal-title font2-5 jauneTHD font-bold" id="myModalLabel">Testez votre éligibilité à la fibre, au très haut débit et à l’ADSL</h1>
+        <br>
+        <div>Renseignez votre numéro de téléphone</div>
+    </div>
+    
+    <br>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-xs-offset-0 pad10b">
+            <input name="ctl00$ContentPlaceHolder1$txt_numero_fixe" type="tel" maxlength="10" id="txt_numero_fixe" class="form-control" placeholder="Numéro de fixe" autocomplete="off" onkeyup="ValiderNumero(this)">
+            <span id="ContentPlaceHolder1_revTelFixe" class="erreur" style="display:none;">Le numéro de fixe est invalide.</span>
+        </div>
+        <div class="col-md-10 col-md-offset-1 col-xs-offset-0">
+            <span id="lbl_err_numero_tel" class="hidden" style="font-weight:bold;"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div id="ContentPlaceHolder1_divOptin">
+            <div class="col-md-9 col-md-offset-2 col-xs-offset-0 pad10b text-left">
+                <span class="hidden-xs hidden-sm" style="margin-left: -25px;"></span>
+                <label class="ug">
+                    <input id="ContentPlaceHolder1_ChkOptinTelCourrierLPTRefuse" type="checkbox" name="ctl00$ContentPlaceHolder1$ChkOptinTelCourrierLPTRefuse" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ChkOptinTelCourrierLPTRefuse\',\'\')', 0)">
+                    <span class="uh" style="top: 35%"></span>
+                    <span class="libelle">
+                        <span id="ContentPlaceHolder1_splbloptin" style="font-size: 11px; line-height: 0pt;">Vous refusez de recevoir des communications commerciales de <span style="white-space:nowrap">La Poste Telecom</span> par courrier ou par téléphone.</span>
+                        <span>
+                </span></span></label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <input type="submit" name="ctl00$ContentPlaceHolder1$bt_eli_ndi" value="VALIDER" id="ContentPlaceHolder1_bt_eli_ndi" (click)="redirectToOffrePage()" disabled="disabled" class="aspNetDisabled btn btn-lg btn-BlackGray">
+            <i class="fa fa-spinner fa-spin fa-2x grey hidden" id="spinnerNDI"></i>
+        </div>
+    </div>
+</div>

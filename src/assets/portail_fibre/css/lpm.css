@@ -151,8 +151,13 @@
     display : table-cell;
 }
 .sectionLPM .td {
-	display : table-cell;
+    display : table-cell;
 }
+
+#openWebCall {
+    display:table  ; 
+    width:100%;
+} 
 .sectionLPM .fullwidth  {
     width : 100%;
 }
