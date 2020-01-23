@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { EligibiliteByAdress } from 'src/eligibilite/models/eligibiliteByAdress.model';
+import { EligibiliteByAdress } from 'src/models/eligibiliteByAdress.model';
 
 @Component({
   selector: 'app-eligibilite-by-adress',

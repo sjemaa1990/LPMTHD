@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component'
 import { ParametreService } from './providers/parametre.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxStepperModule } from 'src/souscription/stepper.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     EligibiliteModule,
     OffreModule,
     FormsModule,  // to use ngmodule
+    NgxStepperModule
   ],
   providers: [ParametreService],
   bootstrap: [AppComponent]

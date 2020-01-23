@@ -10,4 +10,6 @@ export class EligibiliteByNdiService {
 
   baseUrl = environment.apiUrl + 'eligibilite/';
   constructor(private http: HttpClient) { }
+
+  
 }

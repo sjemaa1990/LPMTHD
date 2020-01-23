@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { OffreComponent } from './components/offre/offre.component';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 export const offreRoutes = [
   {
