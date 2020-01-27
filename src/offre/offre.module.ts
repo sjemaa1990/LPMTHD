@@ -7,7 +7,8 @@ export const offreRoutes = [
   {
     path: 'offre',
     pathMatch: 'full',
-    component: OffreComponent
+    component: OffreComponent//,
+    //outlet:'principal'
   }
 ];
  // offre module
@@ -15,7 +16,10 @@ export const offreRoutes = [
   declarations: [OffreComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(offreRoutes)
+    RouterModule.forRoot(offreRoutes)
+  ],
+  exports: [
+    RouterModule
   ]
 })
 export class OffreModule { }

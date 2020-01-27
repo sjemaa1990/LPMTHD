@@ -22,6 +22,9 @@ export const sharedRoutes = [
   imports: [
     CommonModule,
     RouterModule.forChild(sharedRoutes)
+  ],
+  exports: [
+    RouterModule
   ]
 })
 export class SharedModule { }

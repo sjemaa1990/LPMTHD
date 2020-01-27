@@ -4,53 +4,65 @@
 <div class="sectionLPM pad10pct_lr">
     <div class="row text-center">
         <div class="col-xs-2"> <!--  nextStep or currentStep -->
-            <button class="btn btn-default btn-round currentStep" disabled="disabled"><span class="hidden-xs hidden-sm"><b>1</b></span></button>
+            <button  [ngClass]="currentStepNumber == 1 ? currentStepClass : nextStepClass"  disabled="disabled"><span class="hidden-xs hidden-sm"><b>1</b></span></button>
         </div>
         <div class="col-xs-2">
-            <button class="btn btn-default btn-round nextStep" disabled="disabled"><span class="hidden-xs hidden-sm"><b>2</b></span></button>
+            <button [ngClass]="currentStepNumber == 2 ? currentStepClass : nextStepClass" disabled="disabled"><span class="hidden-xs hidden-sm"><b>2</b></span></button>
         </div>
         <div class="col-xs-2">
-            <button class="btn btn-default btn-round nextStep" disabled="disabled"><span class="hidden-xs hidden-sm"><b>3</b></span></button>
+            <button [ngClass]="currentStepNumber == 3 ? currentStepClass : nextStepClass" disabled="disabled"><span class="hidden-xs hidden-sm"><b>3</b></span></button>
         </div>
         <div class="col-xs-2">
-            <button class="btn btn-default btn-round nextStep" disabled="disabled"><span class="hidden-xs hidden-sm"><b>4</b></span></button>
+            <button [ngClass]="currentStepNumber == 4 ? currentStepClass : nextStepClass" disabled="disabled"><span class="hidden-xs hidden-sm"><b>4</b></span></button>
         </div>
         <div class="col-xs-2">
-            <button class="btn btn-default btn-round nextStep" disabled="disabled"><span class="hidden-xs hidden-sm"><b>5</b></span></button>
+            <button [ngClass]="currentStepNumber == 5 ? currentStepClass : nextStepClass" disabled="disabled"><span class="hidden-xs hidden-sm"><b>5</b></span></button>
         </div>
         <div class="col-xs-2">
-            <button class="btn btn-default btn-round nextStep" disabled="disabled"><span class="hidden-xs hidden-sm"><b>6</b></span></button>
+            <button [ngClass]="currentStepNumber == 6 ? currentStepClass : nextStepClass" disabled="disabled"><span class="hidden-xs hidden-sm"><b>6</b></span></button>
         </div>
     </div>
     <div class="row text-center hidden-xs hidden-sm">
         <div class="col-xs-2">
-            <h5 class="font-bold">OPTIONS</h5>    <!--grey or font-bold -->
+            <h5  [ngClass]="currentStepNumber == 1 ? currentLabelStepClass : nextLabelStepClass" >OPTIONS</h5>    <!--grey or font-bold -->
         </div>
         <div class="col-xs-2">
-            <h5 class="grey">COORDONNÉES</h5>
+            <h5 [ngClass]="currentStepNumber == 2 ? currentLabelStepClass : nextLabelStepClass"  >COORDONNÉES</h5>
         </div>
         <div class="col-xs-2">
-            <h5 class="grey">RENDEZ-VOUS</h5>
+            <h5 [ngClass]="currentStepNumber == 3 ? currentLabelStepClass : nextLabelStepClass"  >RENDEZ-VOUS</h5>
         </div>
         <div class="col-xs-2">
-            <h5 class="grey">RÉCAPITULATIF</h5>
+            <h5 [ngClass]="currentStepNumber == 4 ? currentLabelStepClass : nextLabelStepClass" >RÉCAPITULATIF</h5>
         </div>
-        <div class="col-xs-2">
-            <h5 class="grey">PAIEMENT</h5>
+        <div class="col-xs-2"  >
+            <h5 [ngClass]="currentStepNumber == 5 ? currentLabelStepClass : nextLabelStepClass" >PAIEMENT</h5>
         </div>
-        <div class="col-xs-2">
-            <h5 class="grey">CONFIRMATION</h5>
+        <div class="col-xs-2"  >
+            <h5 [ngClass]="currentStepNumber == 6 ? currentLabelStepClass : nextLabelStepClass" >CONFIRMATION</h5>
         </div>
     </div>
 
 <!-- Content  -->
+<nav>
+    <a [routerLink]="[{outlets: {parcoursContent: ['options']}}]"routerLinkActive="active">options</a>
+    <a [routerLink]="[{outlets: {parcoursContent: ['coordonnees']}}]" routerLinkActive="active">coordonnees</a>
 
-
-
+    <a [routerLink]="[{outlets: {test: ['/c1']}}]" routerLinkActive="active">c1</a>
+    <a [routerLink]="[{outlets: {test: ['/c2']}}]" routerLinkActive="active">C2</a>
+  </nav>
+  <!-- <router-outlet name="souscriptionContent"></router-outlet> -->
+  <!-- <router-outlet ></router-outlet> -->
+  <div class="col-xs-2">
+  <router-outlet name="parcoursContent" ></router-outlet>
+</div>
+<div class="col-xs-2">
+    <router-outlet name="test" ></router-outlet>
+  </div>
     <div class="panel panel-default">
         <div class="panel-body text-center">
-            <a  class="btn btn-lg btn-BlackWhite font-bold">Retour</a>&nbsp;&nbsp;
-            <button ID="btnValider" class="btn btn-lg btn-Jaune font-bold" Text="Valider" >Valider</button>
+            <button  class="btn btn-lg btn-BlackWhite font-bold" (click)="back()" [disabled]="isFirstStep">Retour</button>&nbsp;&nbsp;
+            <button ID="btnValider" class="btn btn-lg btn-Jaune font-bold" [disabled]="isLastStep" (click)="valider()" >Valider</button>
         </div>
     </div>
 

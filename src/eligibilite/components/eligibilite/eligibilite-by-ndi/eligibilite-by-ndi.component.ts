@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-eligibilite-by-ndi',
@@ -8,14 +8,14 @@ import { Router } from '@angular/router';
 })
 export class EligibiliteByNdiComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private route: ActivatedRoute,private router: Router) { }
 
   ngOnInit() {
   }
 
   redirectToOffrePage(){
    // this.router.navigate(['error']);
-   debugger;
    this.router.navigate(['souscription']);
+  // this.router.navigate([{ outlets: { principal: ['souscription'] }}],{relativeTo:this.route});
   }
 }

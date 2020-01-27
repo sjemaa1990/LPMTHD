@@ -13,6 +13,8 @@ import { HeaderComponent } from './header/header.component'
 import { ParametreService } from './providers/parametre.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxStepperModule } from 'src/souscription/stepper.module';
+import { EligibiliteComponent } from 'src/eligibilite/components/eligibilite/eligibilite.component';
+
 
 @NgModule({
   declarations: [
@@ -22,13 +24,14 @@ import { NgxStepperModule } from 'src/souscription/stepper.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+   
     HttpClientModule,
     SharedModule,
     EligibiliteModule,
     OffreModule,
     FormsModule,  // to use ngmodule
-    NgxStepperModule
+    NgxStepperModule,
+    AppRoutingModule
   ],
   providers: [ParametreService],
   bootstrap: [AppComponent]

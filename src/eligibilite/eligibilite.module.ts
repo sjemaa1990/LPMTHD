@@ -9,12 +9,14 @@ import { EligibiliteByNdiComponent } from 'src/eligibilite/components/eligibilit
 
 
 import {FormsModule} from '@angular/forms'
+import { NgxStepperModule } from 'src/souscription/stepper.module';
 
 export const eligibiliteRoutes = [
   {
     path: '',
     pathMatch: 'full',
-    component: EligibiliteComponent
+    component: EligibiliteComponent //,
+    //outlet:'principal'
   }
 ];
 
@@ -26,7 +28,7 @@ export const eligibiliteRoutes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(eligibiliteRoutes),
+    RouterModule.forRoot(eligibiliteRoutes),
     FormsModule,
     SharedModule
 
