@@ -48,13 +48,13 @@
     <a [routerLink]="[{outlets: {parcoursContent: ['options']}}]"routerLinkActive="active">options</a>
     <a [routerLink]="[{outlets: {parcoursContent: ['coordonnees']}}]" routerLinkActive="active">coordonnees</a>
 
-    <a [routerLink]="[{outlets: {test: ['/c1']}}]" routerLinkActive="active">c1</a>
-    <a [routerLink]="[{outlets: {test: ['/c2']}}]" routerLinkActive="active">C2</a>
+    <a [routerLink]="[{outlets: {test: ['../c1']}}]" routerLinkActive="active">c1</a>
+    <a [routerLink]="[{outlets: {test: ['../c2']}}]" routerLinkActive="active">C2</a>
   </nav>
   <!-- <router-outlet name="souscriptionContent"></router-outlet> -->
   <!-- <router-outlet ></router-outlet> -->
   <div class="col-xs-2">
-  <router-outlet name="parcoursContent" ></router-outlet>
+  <router-outlet></router-outlet>
 </div>
 <div class="col-xs-2">
     <router-outlet name="test" ></router-outlet>

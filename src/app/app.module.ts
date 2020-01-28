@@ -12,8 +12,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component'
 import { ParametreService } from './providers/parametre.service';
 import { HttpClientModule } from '@angular/common/http';
-import { NgxStepperModule } from 'src/souscription/stepper.module';
-import { EligibiliteComponent } from 'src/eligibilite/components/eligibilite/eligibilite.component';
 
 
 @NgModule({
@@ -24,13 +22,9 @@ import { EligibiliteComponent } from 'src/eligibilite/components/eligibilite/eli
   ],
   imports: [
     BrowserModule,
-   
     HttpClientModule,
     SharedModule,
-    EligibiliteModule,
-    OffreModule,
-    FormsModule,  // to use ngmodule
-    NgxStepperModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [ParametreService],

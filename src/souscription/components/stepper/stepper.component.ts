@@ -9,7 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class StepperComponent implements OnInit {
    currentStepNumber : number = 1;
    listStepNumber : any = [1,2,3,4,5,6];
-  
+
    currentStepClass: string = 'btn btn-default btn-round currentStep';
    nextStepClass: string = 'btn btn-default btn-round nextStep';
    currentLabelStepClass: string = 'font-bold';
@@ -38,7 +38,9 @@ export class StepperComponent implements OnInit {
     if(this.currentStepNumber < this.listStepNumber[this.listStepNumber.length-1])
       this.currentStepNumber  ++;
       this.verifyButtonState();
-      this.router.navigate(['coordonnees']);
+      this.router.navigate(['coordonnees'], { relativeTo: this.route });
+
+    // this.router.navigate([{ outlets: { parcoursContent: ['coordonnees'] } }], { relativeTo: this.route });
       // this.router.navigate([
       //   {
       //     outlets: {
@@ -52,7 +54,8 @@ export class StepperComponent implements OnInit {
   }
   back(){
     this.currentStepNumber  --;
-    this.verifyButtonState();
+		this.verifyButtonState();
+		this.router.navigate(['options'], { relativeTo: this.route });
   }
   verifyButtonState(){
     debugger;

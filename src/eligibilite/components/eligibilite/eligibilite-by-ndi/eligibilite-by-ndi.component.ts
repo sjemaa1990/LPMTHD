@@ -15,7 +15,7 @@ export class EligibiliteByNdiComponent implements OnInit {
 
   redirectToOffrePage(){
    // this.router.navigate(['error']);
-   this.router.navigate(['souscription']);
+   this.router.navigate(['offre']);
   // this.router.navigate([{ outlets: { principal: ['souscription'] }}],{relativeTo:this.route});
   }
 }

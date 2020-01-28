@@ -8,20 +8,18 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 
 export const optionsRoutes = [
   {
-    path: 'options',
-    pathMatch: 'full',
+    path: '',
     component: OptionsComponent //,
    // outlet: 'parcoursContent'
   }
-  
+
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(optionsRoutes),
-    SharedModule,
-    AppRoutingModule
+    RouterModule.forChild(optionsRoutes),
+    SharedModule
   ],
   exports: [
     RouterModule

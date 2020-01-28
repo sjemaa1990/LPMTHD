@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 
 export const offreRoutes = [
   {
-    path: 'offre',
+    path: '',
     pathMatch: 'full',
     component: OffreComponent//,
     //outlet:'principal'
@@ -16,7 +16,7 @@ export const offreRoutes = [
   declarations: [OffreComponent],
   imports: [
     CommonModule,
-    RouterModule.forRoot(offreRoutes)
+    RouterModule.forChild(offreRoutes)
   ],
   exports: [
     RouterModule

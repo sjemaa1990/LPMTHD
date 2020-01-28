@@ -6,16 +6,18 @@ import { CoordonneesComponent } from 'src/coordonnees/components/coordonnees/coo
 export const routes: Routes = [
 
   {
-    path: 'eligibilite', loadChildren: '../eligibilite/eligibilite.module#EligibiliteModule', outlet: 'principal'
+		path: 'eligibilite',
+		loadChildren: () => import("../eligibilite/eligibilite.module").then(mod => mod.EligibiliteModule)
   },
   {
-    path: 'offre', loadChildren: '../offre/offre.module#OffreModule'//, outlet: 'principal'
+    path: 'offre', loadChildren: () => import("../offre/offre.module").then(mod => mod.OffreModule)
   },//, canActivate: [TokenGuardService, AuthGuardService] },
   {
-    path: 'souscription', loadChildren: '../souscription/stepper.module#NgxStepperModule'//, outlet: 'principal'
+    path: 'souscription',
+    loadChildren: () => import('../souscription/stepper.module').then(mod => mod.NgxStepperModule)
   },
-  { 
-    path: 'error', component: ErrorComponent//, outlet: 'principal' 
+  {
+    path: 'error', component: ErrorComponent//, outlet: 'principal'
   },
   { path: '', redirectTo: 'eligibilite', pathMatch: 'full' }
 ];

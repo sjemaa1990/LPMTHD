@@ -17,5 +17,8 @@ export class OffreComponent implements OnInit {
   //this.router.navigate(['login']);
   back(){
     this.router.navigate(['']);
-  }
+	}
+	validerOffre(){
+		this.router.navigate(['souscription']);
+	}
 }
