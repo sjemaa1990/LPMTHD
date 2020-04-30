@@ -22,7 +22,7 @@
     "angular-material": "^1.1.21",
     "bootstrap": "^4.4.1",
     "enhanced-resolve": "^3.3.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ngx-stepper": "^1.1.6",
     "rxjs": "~6.4.0",
     "rxjs-compat": "^6.5.4",
